@@ -5,7 +5,7 @@
 }
 
 html{
-    font-size: 70%;
+    font-size: 65%;
     overflow-x: hidden;
 }
 
@@ -60,12 +60,10 @@ img{
 
 .size-107{
     max-width: 107rem;
-    padding: 0 4rem; 
 }
 
 .size-100{
    max-width: 100rem;
-   padding: 0 4rem;
 }
 
 .size-135{
@@ -102,12 +100,11 @@ img{
 
 @media (max-width:50em){
     html{
-        font-size: 55%;
+        font-size: 60%;
     }
 }
 
 @media(max-width:45em){
-
     body{
         text-align: center;
     }
@@ -115,15 +112,7 @@ img{
     section{
         padding: 2.8rem 2rem;
     }   
-
-    .size-100{
-        padding: 0;
-    }
 }
 
 
-@media(max-width:25em){
-    .size-107{
-        padding: 0 1rem;
-    }
-}
+ 

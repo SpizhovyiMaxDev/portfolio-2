@@ -11,6 +11,8 @@
   }
 
   &-text{
+    max-width: 50rem;
+    padding: 0 1rem;
      p{
       color: #555;
       font-family: Mulish,sans-serif;
@@ -102,9 +104,16 @@
   .skills{
     justify-content: center;
   }
+  
+  .hero-main h1{
+    font-size: 4rem;
+  }
 }
 
-@media(max-width:25em){
+@media(max-width:28em){
+  .hero{
+    padding: 13.4rem 0;
+  }
   .skills{
     flex-wrap: wrap;
   }

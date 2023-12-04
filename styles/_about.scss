@@ -2,9 +2,18 @@
     display:flex;
     gap: 5rem;
     align-items: center;
+    max-width: 80rem;
     @media(max-width:63em){
         flex-direction: column;
         text-align: center;
+    }
+
+    p:last-child{
+        color: #767676;
+        font-family: Mulish,sans-serif;
+        font-size: 1.7rem;
+        font-weight: 500;
+        line-height: 1.5;
     }
 
     &-text{

@@ -77,11 +77,7 @@
         }
 
         &-text {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
             text-align: center;
-            padding:2rem;
             max-width: 40rem;
 
             h3{
@@ -100,8 +96,8 @@
         img {
             display: block;
             border-radius: 2rem;
-            max-width: 50rem;
-            height: 35rem;
+            max-width: 45rem;
+            height: 30rem;
             object-fit: cover;
         }
 
@@ -112,7 +108,7 @@
         margin: 0 auto;
     }
     
-    @media (max-width:63.6em){    
+    @media (max-width:64em){    
         .reverse,
         .project{
             flex-direction: column;
@@ -128,7 +124,7 @@
             }
 
             img{
-                height: auto;
+                height: 25rem;
             }
         }
     }

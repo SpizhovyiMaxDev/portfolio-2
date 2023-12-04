@@ -5,7 +5,7 @@
 }
 
 html {
-  font-size: 70%;
+  font-size: 65%;
   overflow-x: hidden;
 }
 
@@ -53,12 +53,10 @@ img {
 
 .size-107 {
   max-width: 107rem;
-  padding: 0 4rem;
 }
 
 .size-100 {
   max-width: 100rem;
-  padding: 0 4rem;
 }
 
 .size-135 {
@@ -92,7 +90,7 @@ img {
 
 @media (width <= 50em) {
   html {
-    font-size: 55%;
+    font-size: 60%;
   }
 }
 
@@ -103,16 +101,6 @@ img {
 
   section {
     padding: 2.8rem 2rem;
-  }
-
-  .size-100 {
-    padding: 0;
-  }
-}
-
-@media (width <= 25em) {
-  .size-107 {
-    padding: 0 1rem;
   }
 }
 
@@ -210,6 +198,11 @@ img {
   display: flex;
 }
 
+.hero-text {
+  max-width: 50rem;
+  padding: 0 1rem;
+}
+
 .hero-text p {
   color: #555;
   margin-bottom: 1rem;
@@ -295,9 +288,17 @@ img {
   .skills {
     justify-content: center;
   }
+
+  .hero-main h1 {
+    font-size: 4rem;
+  }
 }
 
-@media (width <= 25em) {
+@media (width <= 28em) {
+  .hero {
+    padding: 13.4rem 0;
+  }
+
   .skills {
     flex-wrap: wrap;
   }
@@ -306,6 +307,7 @@ img {
 .about-content {
   align-items: center;
   gap: 5rem;
+  max-width: 80rem;
   display: flex;
 }
 
@@ -314,6 +316,14 @@ img {
     text-align: center;
     flex-direction: column;
   }
+}
+
+.about-content p:last-child {
+  color: #767676;
+  font-family: Mulish, sans-serif;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 .about-content-text {
@@ -411,11 +421,7 @@ img {
 
 .projects .project-text {
   text-align: center;
-  flex-direction: column;
-  justify-content: center;
   max-width: 40rem;
-  padding: 2rem;
-  display: flex;
 }
 
 .projects .project-text h3 {
@@ -433,8 +439,8 @@ img {
 .projects .project img {
   object-fit: cover;
   border-radius: 2rem;
-  max-width: 50rem;
-  height: 35rem;
+  max-width: 45rem;
+  height: 30rem;
   display: block;
 }
 
@@ -443,7 +449,7 @@ img {
   margin: 0 auto;
 }
 
-@media (width <= 63.6em) {
+@media (width <= 64em) {
   .projects .reverse, .projects .project {
     flex-direction: column;
     gap: 2rem;
@@ -460,7 +466,7 @@ img {
   }
 
   .projects .project img {
-    height: auto;
+    height: 25rem;
   }
 }
 
