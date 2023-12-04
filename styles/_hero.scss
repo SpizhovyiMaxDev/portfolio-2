@@ -1,3 +1,73 @@
+/*
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+*/
+
+
+.hero{
+  padding: 13.8rem 2rem;
+  background-color: $main-background;
+    &__content{
+      max-width: 100rem;
+      margin:0 auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap:10rem;
+    }
+
+    &__title{
+      font-size: 5.2rem;
+      margin-bottom: 2rem;
+      line-height: 1.2;
+      color: #2d2e32;
+    }
+
+    &__description{
+      color: #555;
+      font-family: Mulish,sans-serif;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    &__link:link,
+    &__link:visited{
+      svg{
+        color: #000;
+        text-decoration: none;
+        transition: all 0.4s;
+      }
+    }    
+
+    &__link:hover,
+    &__link:active{
+      svg{
+        color: $main-color;
+      }
+    }
+
+    a:not(a:last-child){
+      margin-right:2rem;
+    }
+
+    .skills{
+      margin-top: 1rem;
+      display: flex;
+      gap: 2rem;
+      flex-wrap:wrap;
+    }
+
+    .skills__item{
+      transition: all 0.4s;
+    }
+
+    .skills__item:hover{
+      transform: translateY(-0.3rem);
+    }
+}
 
 
 @keyframes morph {
@@ -12,7 +82,7 @@
     }
 }
   
-.hero-img {
+.hero__img {
   -webkit-animation: morph 8s ease-in-out infinite;
   animation: morph 8s ease-in-out infinite;
   background-position: 50%;
@@ -21,9 +91,33 @@
   background-size: cover;
   border: 3px solid #2d2e32;
   border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  width: 30rem;
-  height: 30rem;
+  width: 35rem;
+  height: 35rem;
   background-image: url('https://i.imgur.com/vPBF1sl.jpg');
 }
 
   
+@media (max-width:58em){
+  .hero{
+    text-align: center;
+
+    &__title{
+        font-size:3.6rem; 
+    }
+
+    &__content{
+      flex-direction: column-reverse;
+      max-width: 60rem;
+      gap:3rem;
+    }
+
+    .skills{
+      justify-content: center;
+    }
+
+    &__img{
+      width: 25rem;
+      height: 25rem;
+    }
+  }
+}

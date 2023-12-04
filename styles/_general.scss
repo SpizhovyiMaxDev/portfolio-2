@@ -5,7 +5,7 @@
 }
 
 html{
-    font-size: 65%;
+    font-size: 62.5%;
     overflow-x: hidden;
 }
 
@@ -18,7 +18,7 @@ body{
 
 $white:#fff;
 $main-color:#2876dc;
-$main-background:#eeedec;
+$main-background:#efefef;
 $text-color-grey:#555;
 
 header{
@@ -38,4 +38,29 @@ img{
     display: inline-block;
     width: 100%;
     height:100%;
+}
+
+
+/****** TEXT SYSTEM ******/
+.heading--primary{
+    color: #2d2e32;
+    font-family: Poppins,sans-serif;
+    font-size: 2.5rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+.sub-heading{
+    color:$main-color;
+    font-size: 1.7rem;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+}
+
+
+@media (max-width:58em){
+    section{
+        padding: 7.8rem 2rem;
+    }
 }
