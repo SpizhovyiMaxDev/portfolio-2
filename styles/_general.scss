@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 70%;
+    overflow-x: hidden;
+}
+
+body{
+    line-height:1.8;
+    font-size: 1.8rem;
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+}
+
+$white:#fff;
+$main-color:#2876dc;
+$main-background:#eeedec;
+$text-color-grey:#555;
+
+header{
+    padding: 1rem 3.5rem;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.137);
+    background-color: $main-background;
+    z-index: 1000;
+}
+
+section{
+    padding:9.8rem 4.5rem;
+}
+
+img{
+    display: inline-block;
+    width: 100%;
+    height:100%;
+}
+
+/* **** GAP SYSTEM **** */
+.gap-45{
+   gap:4.5rem;
+}
+
+.gap-35{
+    gap:3.5rem;
+}
+ 
+.gap-25{
+    gap:2.5rem;
+}
+ 
+/* **** CONTAINER + SIZE SYSTEM **** */
+.container{
+    margin: 0 auto;
+}
+
+.size-107{
+    max-width: 107rem;
+    padding: 0 4rem; 
+}
+
+.size-100{
+   max-width: 100rem;
+   padding: 0 4rem;
+}
+
+.size-135{
+   max-width: 135rem;
+}
+
+.size-125{
+    max-width: 125rem;
+}
+
+
+/* **** TEXT SYSTEM **** */
+.heading-primary{
+    color: #333;
+    font-family: Poppins,sans-serif;
+    font-size: 2.5rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+.sub-heading{
+    color: $main-color;
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+@media(max-width:85em){
+    html{
+        font-size: 62.5%;
+    }
+}    
+
+@media (max-width:50em){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media(max-width:45em){
+
+    body{
+        text-align: center;
+    }
+
+    section{
+        padding: 2.8rem 2rem;
+    }   
+
+    .size-100{
+        padding: 0;
+    }
+}
+
+
+@media(max-width:25em){
+    .size-107{
+        padding: 0 1rem;
+    }
+}

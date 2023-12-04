@@ -1,0 +1,135 @@
+.projects {
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
+    margin-top: 4.8rem;
+
+    .project {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 auto;
+        gap: 4rem;
+        padding: 2rem;
+        border-radius: 2rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        &-btns{
+            margin: 2rem;
+            display: flex;
+            justify-content: center;
+            gap:3rem;
+            
+            .btn-github:link,
+            .btn-github:visited{
+                display: flex;
+                align-items: center;
+                padding: 0.5rem 1.5rem; 
+                text-decoration: none;
+                font-size: 1.6rem;
+                font-weight: bold;
+                text-align: center;
+                text-transform: uppercase;
+                border: 0.2rem solid #333;
+                border-radius: 0.5rem;
+                color: #333;
+                background-color: $white;
+                transition: background-color 0.3s, color 0.3s;
+                transition-timing-function: ease-in-out;
+            }
+            
+            .btn-github:hover,
+            .btn-github:active{
+                background-color: #333;
+                color: $white;
+            }
+            
+            .btn-github:hover,
+            .btn-github:active {
+                box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+            }
+
+
+            .btn-project:link,
+            .btn-project:visited {
+                display: flex;
+                align-items: center;
+                padding: 0.5rem 1.5rem; 
+                text-decoration: none;
+                font-size: 1.6rem;
+                font-weight: bold;
+                text-align: center;
+                text-transform: uppercase;
+                border: 0.2rem solid $main-color;
+                border-radius: 0.5rem;
+                color:$main-color;
+                background-color: $white;
+                transition: background-color 0.3s, color 0.3s;
+                transition-timing-function: ease-in-out;
+            }
+
+            .btn-project:hover,
+            .btn-project:active {
+                background-color: $main-color;
+                color: $white;
+            }
+
+        }
+
+        &-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding:2rem;
+            max-width: 40rem;
+
+            h3{
+                font-size: 2rem;
+            }
+
+            p{
+                color: #767676;
+                font-size: 1.7rem;
+                font-weight: 600;
+                text-align: center;
+                text-transform: none;
+            }
+        }
+
+        img {
+            display: block;
+            border-radius: 2rem;
+            max-width: 50rem;
+            height: 35rem;
+            object-fit: cover;
+        }
+
+    }
+
+    .reverse{
+        flex-direction: row-reverse;
+        margin: 0 auto;
+    }
+    
+    @media (max-width:63.6em){    
+        .reverse,
+        .project{
+            flex-direction: column;
+            gap: 2rem;
+        }
+    }
+
+    @media (max-width:30em) {
+        .project{
+            margin: 0;
+            &-text{
+                padding:0;
+            }
+
+            img{
+                height: auto;
+            }
+        }
+    }
+}
