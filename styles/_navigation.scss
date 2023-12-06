@@ -1,45 +1,3 @@
-/****** (Mobile/Tablet)-navigation ******/
-@media (max-width:63em) {
-    .main-nav-list{
-        position: fixed;
-        top:0;
-        left: 0;
-        width: 100%;
-        height:100vh;
-        justify-content: center;
-        align-items: center;
-        z-index: 9999;
-        background-color: $white;
-        flex-direction: column;
-        font-size: 2.4rem !important;
-        transition: all 0.4s;
-        transform: translateX(100%);
-        opacity: 0;
-        visibility: hidden;
-    }
-    
-    .nav-btn{
-        display: block !important;
-        z-index: 9999;
-    }
-    
-    .show-mobile-nav .main-nav-list {
-        transform: translateX(0);
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .show-mobile-nav svg .open-menu-icon{
-       display: none;
-    }
-
-    .show-mobile-nav svg .close-menu-icon{
-        display: block;
-    }
-}
-
-
-/****** Desktop-navigation ******/
 .navigation{
     display: flex;
     width: 100%;
@@ -48,8 +6,13 @@
     position: relative;
 
     .logo{
-        font-size:3.4rem;
-        font-family: 'Cedarville Cursive', cursive;
+        display: block;
+        font-size: 1.17em;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
     }
 
     .main-nav-list{
@@ -57,6 +20,23 @@
         gap:2rem;
         list-style: none;
         font-size: 2rem;
+        @media (max-width:63em) {
+            position: fixed;
+            top:0;
+            left: 0;
+            width: 100%;
+            height:100vh;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            background-color: $white;
+            flex-direction: column;
+            font-size: 2.4rem;
+            transition: all 0.4s;
+            transform: translateX(100%);
+            opacity: 0;
+            visibility: hidden;
+        }
 
         &__link:link,
         &__link:visited{
@@ -70,24 +50,35 @@
         &__link:active{
            color: $main-color;
         }
-
-        .nav-btn{
-            display: none;
-        }
     }
-   
-    .open-menu-icon{
-        display: block; 
-    }
-
-    .close-menu-icon{
-        display: none;
-    }
-
-    .nav-btn{
-        display: none;
-    }
-
 }
 
+.open-menu-icon{
+    display: block; 
+}
 
+.close-menu-icon{
+    display: none;
+}
+
+.nav-btn{
+    display: none;
+    z-index: 9999;
+    @media (max-width:63em) {
+        display: block;
+    }
+}
+
+.show-mobile-nav .open-menu-icon{
+    display: none;
+ }
+
+ .show-mobile-nav .close-menu-icon{
+     display: block;
+ }
+
+ .show-mobile-nav .main-nav-list {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+}

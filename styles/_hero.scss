@@ -1,13 +1,10 @@
-/*
-- Font sizes (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
-*/
-
-
 .hero{
   padding: 13.8rem 2rem;
   background-color: $main-background;
+  @media (max-width:58em){
+    text-align: center;
+  }
+
     &__content{
       max-width: 100rem;
       margin:0 auto;
@@ -15,6 +12,11 @@
       flex-direction: row;
       align-items: center;
       gap:10rem;
+      @media (max-width:58em) {
+        flex-direction: column-reverse;
+        max-width: 60rem;
+        gap:3rem;
+      }
     }
 
     &__title{
@@ -22,6 +24,10 @@
       margin-bottom: 2rem;
       line-height: 1.2;
       color: #2d2e32;
+
+      @media (max-width:58em) {
+        font-size: 3.6rem;
+      }
     }
 
     &__description{
@@ -35,6 +41,7 @@
 
     &__link:link,
     &__link:visited{
+      text-decoration: none;
       svg{
         color: #000;
         text-decoration: none;
@@ -58,6 +65,9 @@
       display: flex;
       gap: 2rem;
       flex-wrap:wrap;
+      @media (max-width:58em) {
+        justify-content: center;
+      }
     }
 
     .skills__item{
@@ -94,30 +104,8 @@
   width: 35rem;
   height: 35rem;
   background-image: url('https://i.imgur.com/vPBF1sl.jpg');
-}
-
-  
-@media (max-width:58em){
-  .hero{
-    text-align: center;
-
-    &__title{
-        font-size:3.6rem; 
-    }
-
-    &__content{
-      flex-direction: column-reverse;
-      max-width: 60rem;
-      gap:3rem;
-    }
-
-    .skills{
-      justify-content: center;
-    }
-
-    &__img{
+  @media (max-width:58em) {
       width: 25rem;
-      height: 25rem;
-    }
+      height:25rem;
   }
 }
