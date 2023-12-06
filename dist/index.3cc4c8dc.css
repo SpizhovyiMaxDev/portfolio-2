@@ -5,13 +5,19 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 75%;
   overflow-x: hidden;
+}
+
+@media (width <= 82em) {
+  html {
+    font-size: 62.5%;
+  }
 }
 
 @media (width <= 25rem) {
   html {
-    font-size: 58%;
+    font-size: 55%;
   }
 }
 
@@ -426,6 +432,12 @@ img {
   box-shadow: 0 0 10px #0000001a;
 }
 
+@media (width <= 58em) {
+  .project-section .projects .project__image {
+    height: 30rem;
+  }
+}
+
 .project-section .projects .reverse {
   flex-direction: row-reverse;
 }
@@ -504,6 +516,7 @@ img {
 
 @media (width <= 58em) {
   .footer__content {
+    text-align: center;
     flex-direction: column;
     justify-content: center;
     gap: 1rem;

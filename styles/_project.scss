@@ -101,6 +101,9 @@
                 overflow: hidden;
                 max-width: 55rem;
                 object-fit: cover;
+                @media (max-width:58em){
+                    height: 30rem;
+                }
             }
         }
 

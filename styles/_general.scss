@@ -6,9 +6,12 @@
 
 html{
     overflow-x: hidden;
-    font-size: 62.5%;
+    font-size:75%;
+    @media(max-width:82em){
+        font-size: 62.5%;
+    }
     @media (max-width:25rem) {
-        font-size: 58%;
+        font-size: 55%;
     }
 }
 
