@@ -10,8 +10,11 @@ html{
     @media(max-width:82em){
         font-size: 62.5%;
     }
-    @media (max-width:25rem) {
+    @media (max-width:25em) {
         font-size: 59%;
+    }
+    @media(max-width:17.5em){
+        font-size: 45%;
     }
 }
 
