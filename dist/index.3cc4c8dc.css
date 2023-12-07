@@ -5,13 +5,13 @@
 }
 
 html {
-  font-size: 75%;
+  font-size: 70%;
   overflow-x: hidden;
 }
 
-@media (width <= 95em) {
+@media (width <= 105em) {
   html {
-    font-size: 60%;
+    font-size: 62.5%;
   }
 }
 
@@ -76,6 +76,11 @@ img {
   font-weight: 700;
 }
 
+header {
+  background-color: #fff;
+  padding: 2rem 2.5rem;
+}
+
 .navigation {
   justify-content: space-between;
   align-items: center;
@@ -85,9 +90,7 @@ img {
 }
 
 .navigation .logo {
-  margin-block: 1em;
-  margin-inline: 0;
-  font-size: 1.17em;
+  font-size: 1.2em;
   font-weight: bold;
   display: block;
 }
