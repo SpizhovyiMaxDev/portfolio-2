@@ -5,11 +5,11 @@
 }
 
 html {
-  font-size: 70%;
+  font-size: 80%;
   overflow-x: hidden;
 }
 
-@media (width <= 105em) {
+@media (width <= 95em) {
   html {
     font-size: 62.5%;
   }
