@@ -56,11 +56,11 @@ class App {
         {
             className: "project reverse",
             name: "Bankist",
-            span: "Desktop",
+            span: "(Desktop)",
             img: "https://i.imgur.com/AuP4G2A.jpg",
             description: " Bankist seamlessly integrates JavaScript, HTML, and CSS for a smooth, secure user experience, empowering effortless financial management and navigation.",
             github: "https://github.com/SpizhovyiMaxDev/banking",
-            demo: "https://bankist-desktop-sprd.netlify.app",
+            demo: "https://bankist-sprd.netlify.app",
             icon: "\uD83D\uDCB8"
         }
     ];
