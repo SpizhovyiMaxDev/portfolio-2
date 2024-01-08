@@ -8,7 +8,7 @@ class App {
             name: "Forkify",
             span: "Desktop App",
             img: "https://i.imgur.com/Iwk6T1T.jpg",
-            description: " Project employs JavaScript for manipulation, API interaction; SCSS for styling, HTML for content structure\u2014blending dynamic functionality with advanced design.",
+            description: "The food app simplifies recipe searches, preserves ingredients efficiently, and analyzes culinary details. With Vanilla JavaScript and Sass, it seamlessly blends dynamic features with polished design.",
             github: "https://github.com/SpizhovyiMaxDev/forkify-code",
             demo: "https://forkify-sprd.netlify.app",
             icon: "\uD83D\uDCDD"
@@ -18,7 +18,7 @@ class App {
             name: "WeatherNest",
             span: "Desktop App",
             img: "https://i.imgur.com/r8RPf7i.png",
-            description: " Facilitates city-specific inquiries, data retention, and in-depth analysis of meteorological information.",
+            description: "The project eases city queries, stores data efficiently, and analyzes weather. With Vanilla JavaScript and SCSS, it blends dynamic features seamlessly with nice design.",
             github: "https://github.com/SpizhovyiMaxDev/weather-nest",
             demo: "https://weathernest-sprd.netlify.app",
             icon: "\uD83C\uDF21\uFE0F"
@@ -28,7 +28,7 @@ class App {
             name: "Omnifood",
             span: "Responsive",
             img: "https://i.imgur.com/kAZZJoi.jpg",
-            description: "Explore Omnifood, a desktop web app offering real-time recipes and diverse cooking options, making culinary inspiration accessible with detailed instructions.",
+            description: "In this project, I mastered design patterns and gained hands-on expertise in HTML, CSS, web manifest, and icon implementation, refining my skills in web development.",
             github: "https://github.com/SpizhovyiMaxDev/omnifood",
             demo: "https://omnifood-sprd.netlify.app",
             icon: "\uD83C\uDF7D\uFE0F"
@@ -38,7 +38,7 @@ class App {
             name: "Mapty",
             span: "Desktop App",
             img: "https://i.imgur.com/lUAJPMY.jpg",
-            description: "Experience Mapty's seamless blend of JavaScript, HTML, and CSS for a responsive and user-friendly platform, optimizing your fitness journey.",
+            description: "Experience Mapty's seamless blend of Vanilia JavaScript for a responsive and user-friendly platform, optimizing your fitness journey.",
             github: "https://github.com/SpizhovyiMaxDev/Mapty",
             demo: "https://mapty-sprd.netlify.app",
             icon: "\uD83D\uDDFA\uFE0F"
@@ -58,7 +58,7 @@ class App {
             name: "Bankist",
             span: "Desktop",
             img: "https://i.imgur.com/AuP4G2A.jpg",
-            description: " Bankist seamlessly integrates JavaScript, HTML, and CSS for a smooth, secure user experience, empowering effortless financial management and navigation.",
+            description: "Bankist skillfully employs Vanilla JavaScript. Through this project, I delved into the DOM, methods, event objects, and explored new APIs, enriching my web development expertise.",
             github: "https://github.com/SpizhovyiMaxDev/banking",
             demo: "https://bankist-sprd.netlify.app",
             icon: "\uD83D\uDCB8"

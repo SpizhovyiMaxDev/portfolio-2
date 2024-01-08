@@ -21,7 +21,7 @@ html {
   }
 }
 
-@media (width <= 17.5em) {
+@media (width <= 19em) {
   html {
     font-size: 45%;
   }
@@ -325,7 +325,7 @@ header {
 }
 
 .about__image {
-  filter: blur(3px);
+  opacity: .7;
   border-radius: 2rem;
   width: 30rem;
   height: 30rem;
@@ -370,7 +370,7 @@ header {
   box-shadow: 0 0 10px #0000001a;
 }
 
-@media (width <= 58em) {
+@media (width <= 60em) {
   .project-section .projects .project {
     flex-direction: column;
     gap: 3rem;
@@ -414,7 +414,7 @@ header {
   text-align: center;
   text-transform: none;
   margin-bottom: 2rem;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   font-weight: 500;
 }
 
@@ -442,6 +442,7 @@ header {
 
 .project-section .projects .project__image {
   object-fit: cover;
+  filter: brightness(80%);
   border-radius: 1.7rem;
   max-width: 55rem;
   height: auto;
@@ -459,7 +460,7 @@ header {
   flex-direction: row-reverse;
 }
 
-@media (width <= 58em) {
+@media (width <= 60em) {
   .project-section .projects .reverse {
     flex-direction: column;
     gap: 3rem;
