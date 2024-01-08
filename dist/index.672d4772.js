@@ -60,7 +60,7 @@ class App {
             img: "https://i.imgur.com/AuP4G2A.jpg",
             description: "Bankist skillfully employs Vanilla JavaScript. Through this project, I delved into the DOM, methods, event objects, and explored new APIs, enriching my web development expertise.",
             github: "https://github.com/SpizhovyiMaxDev/banking",
-            demo: "https://bankist-sprd.netlify.app",
+            demo: "https://bankist-desktop-sprd.netlify.app",
             icon: "\uD83D\uDCB8"
         }
     ];
